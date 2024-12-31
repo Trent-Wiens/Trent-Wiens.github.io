@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A description of your website">
+    <title>Your Website Title</title>
+    <link rel="stylesheet" href="style.css"> <!-- Optional: Link to your CSS file -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <header>
+        <h1>Trent's Top Ten 2024</h1>
+        <p class="intro-para">2024 has been a very exciting year in music, and I have decided to put together my top ten
+            list! You can click each number and it will reveal the album (or you can reveal if you aren't into that).
+            Each one has a little bit about why I like it, and then the tracklist with my ranking of each song. I am no
+            graphic designer, but I am hoping that I can improve this website each year going forward!</p>
+    </header>
+
+    <div class="button-group">
+        <button id="hide-all-button">Hide All</button>
+        <button id="reveal-all-button">Reveal All</button>    
+    </div>
+    
+
+    <div class="album-wrapper">
+
+        <button class="h-overlay-button" id="show-album">
+            <span class="button-hm">
+                Honorable Mentions
+            </span>
+        </button>
+
+        <div class="hms" id="album">
+
+            <div class="honorable-header">
+                <img src="images/PDC.jpg" alt="Please Don't Cry" class="honorable-pic">
+                <div class="honorable-details">
+                    <h1 class="h-name">Please Don't Cry</h1>
+                    <h2 class="h-artist">Rapsody</h2>
+                    <p class="h-review">Rapsody is very introspective on this album, with some great production as well.
+                        Specifically, 'Asteroids' and '3 A.M.' sound great.</p>
+                </div>
+                <div class="h-links">
+                    <a href="https://music.apple.com/us/album/please-dont-cry/17356004079" target="_blank"
+                        class="links-pic">
+                        <img src="images/Apple_Music_Icon_RGB_lg_073120.svg" alt="Apple Music" class="AppleMusic">
+                    </a>
+                    <a href="https://open.spotify.com/album/2r3oxZgkGG3wDHGRGt7ytr?si=Hli0l3tpQXqP6IAc1Hv9Yg"
+                        target="_blank" class="links-pic">
+                        <img src="images/Spotify.png" alt="Spotify" class="Spotify">
+                    </a>
+                </div>
+            </div>
+
+            <div class="honorable-header">
+                <img src="images/SnS.jpg" alt="Short n' Sweet" class="honorable-pic">
+                <div class="honorable-details">
+                    <h1 class="h-name" id="short-n-sweet">Short n' Sweet</h1>
+                    <h2 class="h-artist">Sabrina Carpenter</h2>
+                    <p class="h-review">Sabrina has had a great year. I could not get 'Please Please
+                        Please' and 'Espresso' out of my head all year.</p>
+                </div>
+                <div class="h-links">
+                    <a href="https://music.apple.com/us/album/short-n-sweet/1750307020" target="_blank"
+                        class="links-pic">
+                        <img src="images/Apple_Music_Icon_RGB_lg_073120.svg" alt="Apple Music" class="AppleMusic">
+                    </a>
+                    <a href="https://open.spotify.com/album/3iPSVi54hsacKKl1xIR2eH?si=8jiuednrRc6doP8SfD2JGQ"
+                        target="_blank" class="links-pic">
+                        <img src="images/Spotify.png" alt="Spotify" class="Spotify">
+                    </a>
+                </div>
+            </div>
+
+            <div class="honorable-header">
+                <img src="images/NoHands.jpg" alt="No Hands" class="honorable-pic">
+                <div class="honorable-details">
+                    <h1 class="h-name" id="no-hands">NO HANDS</h1>
+                    <h2 class="h-artist">Joey Valence & Brae</h2>
+                    <p class="h-review"><em>NO HANDS</em> is very reminicient of the Beastie Boys, in all the best ways.
+                        From the funrock/rap production, to the fun bars and lyricism, it is a great listen all the way
+                        through.</p>
+                </div>
+                <div class="h-links">
+                    <a href="https://music.apple.com/us/album/no-hands/1745792082" target="_blank" class="links-pic">
+                        <img src="images/Apple_Music_Icon_RGB_lg_073120.svg" alt="Apple Music" class="AppleMusic">
+                    </a>
+                    <a href="https://open.spotify.com/album/1Fjelo0jZ4i1iQZBsK0pOA?si=3A4gSSbrSIu-wiVd5FZMrg"
+                        target="_blank" class="links-pic">
+                        <img src="images/Spotify.png" alt="Spotify" class="Spotify">
+                    </a>
+                </div>
+            </div>
+
+            <div class="honorable-header">
+                <img src="images/ABNH.jpg" alt="Alligator Bites Never Heal" class="honorable-pic">
+                <div class="honorable-details">
+                    <h1 class="h-name">Alligator Bites Never Heal</h1>
+                    <h2 class="h-artist">Doechii</h2>
+                    <p class="h-review">While I was not initally a fan, <em>Alligator Bites Never Heal</em> has grown on
+                        me throughout the year. Doechii has a very ambitious sound, and I am very excited to see what
+                        she does next.</p>
+                </div>
+                <div class="h-links">
+                    <a href="https://music.apple.com/us/album/alligator-bites-never-heal/1763934442" target="_blank"
+                        class="links-pic">
+                        <img src="images/Apple_Music_Icon_RGB_lg_073120.svg" alt="Apple Music" class="AppleMusic">
+                    </a>
+                    <a href="https://open.spotify.com/album/60UzB8mOCMpc7xkuJE6Bwc?si=zeZs8Q_iQHGJaKwx3qJqsw"
+                        target="_blank" class="links-pic">
+                        <img src="images/Spotify.png" alt="Spotify" class="Spotify">
+                    </a>
+                </div>
+            </div>
+
+            <div class="honorable-header">
+                <img src="images/CowboyCarter.jpg" alt="COWBOY CARTER" class="honorable-pic">
+                <div class="honorable-details">
+                    <h1 class="h-name">COWBOY CARTER</h1>
+                    <h2 class="h-artist">Beyonc&eacute</h2>
+                    <p class="h-review"><em>COWBOY CARTER</em> has some amazing themes and sounds and most of the album
+                        is a master class in keeping within the pop genre while paying homage to country influences.</p>
+                </div>
+                <div class="h-links">
+                    <a href="https://music.apple.com/us/album/cowboy-carter/1738363766" target="_blank"
+                        class="links-pic">
+                        <img src="images/Apple_Music_Icon_RGB_lg_073120.svg" alt="Apple Music" class="AppleMusic">
+                    </a>
+                    <a href="https://open.spotify.com/album/6BzxX6zkDsYKFJ04ziU5xQ?si=RfkPmYXETM6zMt6SsqhJog"
+                        target="_blank" class="links-pic">
+                        <img src="images/Spotify.png" alt="Spotify" class="Spotify">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- album 10 -->
+
+    <div class="album-wrapper">
+        <button class="overlay-button" id="show-album">
+            <span class="number-hidden">10</span>
+        </button>
+        <div class="album" id="album">
+            <span class="number">10</span>
+            <div class="album-header">
+                <img src="images/DarkTimes.jpg" alt="Dark Times" class="album-art">
+                <div class="album-details">
+                    <h1 class="name">Dark Times</h1>
+                    <h2 class="artist">Vince Staples</h2>
+                    <p class="review">Vince Staples has a way of creating the perfect chorus that will always get stuck
+                        in your head and keep you coming back on <em>Dark Times</em>. The production is exciting when it
+                        needs to be, contrasting Vince's fairly monotone delivery, leading to an amazing final product.
+                        ‘Black&Blue’ is a perfect example of this, with a very busy production, Vince doesn't overdo his
+                        delivery, which could have led to an overly busy song. Additionally, 'Justin' lets Staples show
+                        off his storytelling skills, although I wish it has been longer. Finally, ‘"Radio"’ somehow
+                        gives me nostalgia for times that I haven't experienced in full, before streaming services took
+                        over as the preferred way to listen to music. While the convenience is unmatched, there is
+                        something unifying about listening to the radio and knowing everyone else is listening to the
+                        same thing at the same time.</p>
+                </div>
+                <div class="links">
+                    <a href="https://music.apple.com/us/album/dark-times/1747072325" target="_blank" class="links-pic">
+                        <img src="images/Apple_Music_Icon_RGB_lg_073120.svg" alt="Apple Music" class="AppleMusic">
+                    </a>
+                    <a href="https://open.spotify.com/album/30BFY5VHii4PyWqkTubUWX?si=Y8DcHmJnTdqodRZPOPeGOA"
+                        target="_blank" class="links-pic">
+                        <img src="images/Spotify.png" alt="Spotify" class="Spotify">
+                    </a>
+                </div>
+            </div>
+            <div class="tracklist-section">
+                <button class="tracklist-dropdown" id="toggle-tracklist">Show Tracklist</button>
+                <div class="tracklist-wrapper hidden" id="tracklist">
+                    <ol class="tracklist">
+                        <li class="interlude">1. Close Your Eyes and Swing</li>
+                        <li class="amazing">2. Black&Blue</li>
+                        <li class="good"> 3. Government Cheese</li>
+                        <li class="good"> 4. Children's Song</li>
+                        <li class="amazing">5. Shame On The Devil</li>
+                        <li class="amazing">6. &Eacutetouf&eacutee</li>
+                        <li class="interlude">7. Liars</li>
+                        <li class="amazing">8. Justin</li>
+                        <li class="best"> 9. "Radio"</li>
+                        <li class="good"> 10. Nothing Matters</li>
+                        <li class="amazing">11. Little Homies</li>
+                        <li class="okay"> 12. Freeman</li>
+                        <li class="interlude">13. Why Won't the Sun Come Out?</li>
+                    </ol>
+                    <ol class="ranks">
+                        <li class="r-title">Ranking:</li>
+                        <ul class="rank-items">
+                            <li class="best">Best</li>
+                            <li class="perfect">Perfect</li>
+                            <li class="amazing">Amazing</li>
+                            <li class="good">Good</li>
+                            <li class="okay">Okay</li>
+                            <li class="bad">Bad</li>
+                            <li class="interlude">Interlude</li>
+                        </ul>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- album 9 -->
+
+    <div class="album-wrapper">
+        <button class="overlay-button" id="show-album">
+            <span class="number-hidden">9</span>
+        </button>
+        <div class="album" id="album">
+            <span class="number">9</span>
+            <div class="album-header">
+                <img src="images/BlueLips.jpg" alt="Blue Lips" class="album-art">
+                <div class="album-details">
+                    <h1 class="name">Blue Lips</h1>
+                    <h2 class="artist">ScHoolboy Q</h2>
+                    <p class="review">
+                        I used to think that Kendrick Lamar was the only rapper I trusted to make a good beat switch,
+                        but ScHoolboy Q has changed my mind, almost to an excessive degree. Many of the songs on
+                        <em>Blue Lips</em> start with roughly 30 seconds of a different beat, and then switch into
+                        something new, and while it is very fun for a while, sometimes it gets to be too much. However,
+                        this album is very consistent throughout, the jazz and soul influences are all over the album
+                        and are executed amazingly. 'Pop' is a stand out song to me, the grimy beat matches the angry
+                        sounding ScHoolboy Q and Rico Nasty extremely well. This was also my first exposure to AzChike
+                        on 'Movie', who I will be looking forward to hearing more from, especially after his feature on
+                        Kendrick Lamar's GNX.
+                    </p>
+                </div>
+                <div class="links">
+                    <a href="https://music.apple.com/us/album/blue-lips/1730821885" target="_blank" class="links-pic">
+                        <img src="images/Apple_Music_Icon_RGB_lg_073120.svg" alt="Apple Music" class="AppleMusic">
+                    </a>
+                    <a href="https://open.spotify.com/album/107WsrBqn5xVPgystkziry?si=8gOuxgI4Tge5cYlnWBRAhg"
+                        target="_blank" class="links-pic">
+                        <img src="images/Spotify.png" alt="Spotify" class="Spotify">
+                    </a>
+                </div>
+            </div>
+            <div class="tracklist-section">
+                <button class="tracklist-dropdown" id="toggle-tracklist">Show Tracklist</button>
+                <div class="tracklist-wrapper hidden" id="tracklist">
+                    <ol class="tracklist">
+                        <li class="interlude">1. Funny Guy</li>
+                        <li class="best"> 2. Pop (feat. Rico Nasty)</li>
+                        <li class="amazing">3. THank god 4 me</li>
+                        <li class="good"> 4. Blueslides</li>
+                        <li class="amazing">5. Yeern 101</li>
+                        <li class="amazing">6. Love Birds (feat. Devin Malik & Lance Skiiiwalker)</li>
+                        <li class="amazing">7. Movie (feat. AzChike)</li>
+                        <li class="okay"> 8. Cooties</li>
+                        <li class="amazing">9. oHio (feat. Freddie Gibbs)</li>
+                        <li class="okay"> 10. Foux (feat. Ab-Soul)</li>
+                        <li class="good"> 11. First</li>
+                        <li class="okay"> 12. Nunu</li>
+                        <li class="okay"> 13. Back n Love (feat. Devin Malik)</li>
+                        <li class="okay"> 14. Lost Times (feat. Jozzy)</li>
+                        <li class="good"> 15. Germany 86'</li>
+                        <li class="good"> 16. Time killers</li>
+                        <li class="amazing">17. Pig feet (feat. Childish Major)</li>
+                        <li class="amazing">18. Smile</li>
+                    </ol>
+                    <ol class="ranks">
+                        <li class="r-title">Ranking:</li>
+                        <ul class="rank-items">
+                            <li class="best">Best</li>
+                            <li class="perfect">Perfect</li>
+                            <li class="amazing">Amazing</li>
+                            <li class="good">Good</li>
+                            <li class="okay">Okay</li>
+                            <li class="bad">Bad</li>
+                            <li class="interlude">Interlude</li>
+                        </ul>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- album 8 -->
+
+    <div class="album-wrapper">
+        <button class="overlay-button" id="show-album">
+            <span class="number-hidden">8</span>
+        </button>
+        <div class="album" id="album">
+            <span class="number">8</span>
+            <div class="album-header">
+                <img src="images/KOTMS2.webp" alt="King Of The Mischievous South Vol. 2" class="album-art">
+                <div class="album-details">
+                    <h1 class="name">King Of The Mischievous South Vol. 2</h1>
+                    <h2 class="artist">Denzel Curry</h2>
+                    <p class="review">
+                        When I think of a true southern rap album, <em>King Of The Mischievous South Vol. 2</em> is what
+                        I think of. This album (which feels more like a mixtape) has heavy beats and hard-hitting bars
+                        and show off lots of talent from the south. 'BLACK FLAG FREESTYLE' has phenomenal bars along
+                        with a simple but amazing beat. While I tend to think the album has too many interludes that
+                        tend to break up the energy, every song on this album has at least one part that I always want
+                        to come back to, from the smooth chorus of 'COLE PIMP' to the hardcore high-energy 'SKED'.
+                    </p>
+                </div>
+                <div class="links">
+                    <a href="https://music.apple.com/us/album/king-of-the-mischievous-south-vol-2/1746800438"
+                        target="_blank" class="links-pic">
+                        <img src="images/Apple_Music_Icon_RGB_lg_073120.svg" alt="Apple Music" class="AppleMusic">
+                    </a>
+                    <a href="https://open.spotify.com/album/6LoDd1G8en4TcqdSg7yqrV?si=JrZMpG9ORRqP2J-HAqLjHQ"
+                        target="_blank" class="links-pic">
+                        <img src="images/Spotify.png" alt="Spotify" class="Spotify">
+                    </a>
+                </div>
+            </div>
+            <div class="tracklist-section">
+                <button class="tracklist-dropdown" id="toggle-tracklist">Show Tracklist</button>
+                <div class="tracklist-wrapper hidden" id="tracklist">
+                    <ol class="tracklist">
+                        <li class="interlude">1. KOTMS II INTRO (with Kingpin Skinny Pimp)</li>
+                        <li class="amazing">2. ULTRA SHXT (with Key Nyata)</li>
+                        <li class="amazing">3. SET IT (with Maxo Kream)</li>
+                        <li class="amazing">4. HOT ONE (with TiaCorine & A$AP Ferg)</li>
+                        <li class="best"> 5. BLACK FLAG FREESTYLE (with That Mexican OT)</li>
+                        <li class="interlude">6. HEADCRACK INTERLUDE (with Kingpin Skinny Pimp)</li>
+                        <li class="amazing">7. G'Z UP (with 2 Chainz, Mike Dimes)</li>
+                        <li class="interlude">8. LUNATIC INTERLUDE (with Kingpin Skinny Pimp)</li>
+                        <li class="perfect">9. SKED (with Kenny Mason & Project Pat)</li>
+                        <li class="interlude">10. CHOOSE WISLEY INTERMISSION (with Kingpin Skinny Pimp)</li>
+                        <li class="perfect">11. COLE PIMP (with Ty Dolla $ign & Juicy J)</li>
+                        <li class="amazing">12. WISHLIST [with Armani White]</li>
+                        <li class="good"> 13. HIT THE FLOOR (with Ski Mask The Slump God)</li>
+                        <li class="amazing">14. HOODLUMZ (with PlayThatBoiZay & A$AP Rocky)</li>
+                        <li class="interlude">15. KOTMS II OUTRO (with Kingping Skinny Pimp)</li>
+                    </ol>
+                    <ol class="ranks">
+                        <li class="r-title">Ranking:</li>
+                        <ul class="rank-items">
+                            <li class="best">Best</li>
+                            <li class="perfect">Perfect</li>
+                            <li class="amazing">Amazing</li>
+                            <li class="good">Good</li>
+                            <li class="okay">Okay</li>
+                            <li class="bad">Bad</li>
+                            <li class="interlude">Interlude</li>
+                        </ul>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- album 7 -->
+
+    <div class="album-wrapper">
+        <button class="overlay-button" id="show-album">
+            <span class="number-hidden">7</span>
+        </button>
+        <div class="album" id="album">
+            <span class="number">7</span>
+            <div class="album-header">
+                <img src="images/BandoStone.jpg" alt="Bando Stone and The New World" class="album-art">
+                <div class="album-details">
+                    <h1 class="name">Bando Stone and The New World</h1>
+                    <h2 class="artist">Childish Gambino</h2>
+                    <p class="review">
+                        While it's a bit bittersweet, <em>Bando Stone and The New World</em> is an amazing album to send
+                        off the Childish Gambino persona. You can tell that Gambino is experimenting with lots of
+                        different sounds, and he is able to pull it off perfectly. The snippets of dialogue create an
+                        atmosphere where you can imagine how each song will be used in the movie. Songs like 'Lithonia'
+                        and 'Real Love' show off his singing voice, while 'Talk My Shit' and 'Yoshinoya' allow him to
+                        craft bars like he did on <em>Because The Internet</em> and <em>Camp</em>. I love how much he
+                        talks about being a father on songs like 'Dadvocate' and even singing with his son on 'Can You
+                        Feel Me'. It is a bit sad to see Childish Gambino go, I am sure Donald Glover is not done with
+                        music, and I am excited to see the Bando Stone movie this summer.
+                    </p>
+                </div>
+                <div class="links">
+                    <a href="https://music.apple.com/us/album/bando-stone-and-the-new-world/1757678472" target="_blank"
+                        class="links-pic">
+                        <img src="images/Apple_Music_Icon_RGB_lg_073120.svg" alt="Apple Music" class="AppleMusic">
+                    </a>
+                    <a href="https://open.spotify.com/album/4yUqNSK6jMi7Y6eWl03U5r?si=4GjVcn2uQOq6w58T3i8A_g"
+                        target="_blank" class="links-pic">
+                        <img src="images/Spotify.png" alt="Spotify" class="Spotify">
+                    </a>
+                </div>
+            </div>
+            <div class="tracklist-section">
+                <button class="tracklist-dropdown" id="toggle-tracklist">Show Tracklist</button>
+                <div class="tracklist-wrapper hidden" id="tracklist">
+                    <ol class="tracklist">
+                        <li class="amazing">1. H3@RT$ W3RE M3@NT T0 F7¥</li>
+                        <li class="perfect">2. Lithonia</li>
+                        <li class="good"> 3. Survive (feat. Chlo&euml)</li>
+                        <li class="amazing">4. Steps Beach</li>
+                        <li class="perfect">5. Talk My Shit (feat. Amaarae & Flo Milli)</li>
+                        <li class="amazing">6. Got To Be</li>
+                        <li class="perfect">7. Real Love</li>
+                        <li class="amazing">8. In The Night (feat. Jorja Smith & Amaarae)</li>
+                        <li class="best"> 9. Yoshinoya</li>
+                        <li class="good"> 10. Can You Feel Me (feat. Legend)</li>
+                        <li class="good"> 11. No Excuses (feat. Ludwig G&oumlransson & Kamasi Washington)</li>
+                        <li class="perfect">12. Cruisin' (feat. Yeat)</li>
+                        <li class="good"> 13. We Are God</li>
+                        <li class="good"> 14. Running Around (feat. Foushe&eacute)</li>
+                        <li class="amazing">15. Dadvocate</li>
+                        <li class="good"> 16. Happy Survival (feat. Khruangbin)</li>
+                        <li class="amazing">17. A Place Where Love Goes</li>
+                    </ol>
+                    <ol class="ranks">
+                        <li class="r-title">Ranking:</li>
+                        <ul class="rank-items">
+                            <li class="best">Best</li>
+                            <li class="perfect">Perfect</li>
+                            <li class="amazing">Amazing</li>
+                            <li class="good">Good</li>
+                            <li class="okay">Okay</li>
+                            <li class="bad">Bad</li>
+                            <li class="interlude">Interlude</li>
+                        </ul>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- album 6 -->
+
+    <div class="album-wrapper">
+        <button class="overlay-button" id="show-album">
+            <span class="number-hidden">6</span>
+        </button>
+        <div class="album" id="album">
+            <span class="number">6</span>
+            <div class="album-header">
+                <img src="images/TheCrossroads.jpg" alt="The Crossroads" class="album-art">
+                <div class="album-details">
+                    <h1 class="name">The Crossroads</h1>
+                    <h2 class="artist">Cordae</h2>
+                    <p class="review">
+                        I wish Cordae had gotten more love for this album when it came out, but I think <em>The
+                            Crossroads</em> got overshadowed by Kendrick Lamar's <em>GNX</em> when it came out a week
+                        after. Cordae talks a lot about his family, like on '06 dreamin', where Cordae recounts his
+                        mother's attempts to become a big artist when he was a kid, and being supportive of her all the
+                        way through. In fact, Cordae sampled a song made by his mom in the beat of this song, which is
+                        an amazing full circle moment. He also talks about how happy he is to be a father on ‘Shai
+                        Afeni’ and about missing his late grandmother on ‘Now You Know’. Although throughout the album,
+                        he doesn’t hesitate to flex like on ‘Never See It’ and ‘Mad As F*ck’. He talks about the
+                        struggle of keeping family at the top priority while having strong ambitions for music on ‘What
+                        Really Matters’, and being scared to lose the things he worked for on ‘Nothings Promised’.
+                        However, Cordae is able to keep it light on songs like ‘Saturday Mornings’, ‘No Bad News’ and
+                        ‘Two Tens’ which are fun songs. Overall, I love the sped up soul samples and smooth 808s, which
+                        are very reminiscent of <em>The College Dropout</em> era Kanye, which makes this album a very
+                        fun listen.
+                    </p>
+                </div>
+                <div class="links">
+                    <a href="https://music.apple.com/us/album/the-crossroads/1772974529" target="_blank"
+                        class="links-pic">
+                        <img src="images/Apple_Music_Icon_RGB_lg_073120.svg" alt="Apple Music" class="AppleMusic">
+                    </a>
+                    <a href="https://open.spotify.com/album/7oZOlyOhZSUn1zfojIzMHR?si=HQ4NAFWYRDe3sdOGaXt2fA"
+                        target="_blank" class="links-pic">
+                        <img src="images/Spotify.png" alt="Spotify" class="Spotify">
+                    </a>
+                </div>
+            </div>
+            <div class="tracklist-section">
+                <button class="tracklist-dropdown" id="toggle-tracklist">Show Tracklist</button>
+                <div class="tracklist-wrapper hidden" id="tracklist">
+                    <ol class="tracklist">
+                        <li class="interlude">1. Intro</li>
+                        <li class="best"> 2. 06 dreamin</li>
+                        <li class="amazing">3. Back on the Road (feat. Lil Wayne)</li>
+                        <li class="amazing">4. Summer Drop (feat. Anderson .Paak)</li>
+                        <li class="amazing">5. Nothings Promised</li>
+                        <li class="amazing">6. Mad As F*ck</li>
+                        <li class="good"> 7. All Alone</li>
+                        <li class="amazing">8. Never See It (feat. Juicy J)</li>
+                        <li class="amazing">9. Pray (feat. Ty Dolla $ign)</li>
+                        <li class="perfect">10. Don't Walk Away (feat. Jordan Ward & Ravyn Lenae)</li>
+                        <li class="perfect">11. Saturday Mornings (feat. Lil Wayne)</li>
+                        <li class="perfect">12. No Bad News (feat. Kanye West)</li>
+                        <li class="perfect">13. Shai Afeni</li>
+                        <li class="perfect">14. What Really Matters</li>
+                        <li class="amazing">15. Syrup Sandwiches (feat. Joey Bada$$)</li>
+                        <li class="perfect">16. Now You Know</li>
+                        <li class="perfect">17. Two Tens (feat. Anderson .Paak) - Bonus Track</li>
+                    </ol>
+                    <ol class="ranks">
+                        <li class="r-title">Ranking:</li>
+                        <ul class="rank-items">
+                            <li class="best">Best</li>
+                            <li class="perfect">Perfect</li>
+                            <li class="amazing">Amazing</li>
+                            <li class="good">Good</li>
+                            <li class="okay">Okay</li>
+                            <li class="bad">Bad</li>
+                            <li class="interlude">Interlude</li>
+                        </ul>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- album 5 -->
+
+    <div class="album-wrapper">
+        <button class="overlay-button" id="show-album">
+            <span class="number-hidden">5</span>
+        </button>
+        <div class="album" id="album">
+            <span class="number">5</span>
+            <div class="album-header">
+                <img src="images/brat.jpg" alt="BRAT" class="album-art">
+                <div class="album-details">
+                    <h1 class="name">BRAT</h1>
+                    <h2 class="artist">Charli xcx</h2>
+                    <p class="review">
+                        <em>BRAT</em> has been such a huge phenomenon this year, and I am so happy to see Charli xcx
+                        getting her flowers. This album is equal parts fist pumping in the club and deeply personal.
+                        Songs like ‘Club classics’ and ‘Von dutch’ say “I am a bad bitch”, ‘Talk talk’ is a love song
+                        about just wanting to talk to someone and ‘I think about it all the time’ is about balancing
+                        your career against the desire to have a child. The range of the songs on this album is truly
+                        amazing, but it never feels like it is too much. Even the harsher transitions between songs feel
+                        somewhat intentional, like suddenly getting hit by a bucket of cold water. This
+                        album was all I listened to over the summer and I don’t regret it at all.
+                    </p>
+                </div>
+                <div class="links">
+                    <a href="https://music.apple.com/us/album/brat/1739079974" target="_blank" class="links-pic">
+                        <img src="images/Apple_Music_Icon_RGB_lg_073120.svg" alt="Apple Music" class="AppleMusic">
+                    </a>
+                    <a href="https://open.spotify.com/album/2lIZef4lzdvZkiiCzvPKj7?si=VIFG0l7xTruE3hu0vdXESA"
+                        target="_blank" class="links-pic">
+                        <img src="images/Spotify.png" alt="Spotify" class="Spotify">
+                    </a>
+                </div>
+            </div>
+            <div class="tracklist-section">
+                <button class="tracklist-dropdown" id="toggle-tracklist">Show Tracklist</button>
+                <div class="tracklist-wrapper hidden" id="tracklist">
+                    <ol class="tracklist">
+                        <li class="amazing">1. 360</li>
+                        <li class="amazing">2. Club classics</li>
+                        <li class="amazing">3. Sympathy is a knife</li>
+                        <li class="perfect">4. I might say something stupid</li>
+                        <li class="perfect">5. Talk talk</li>
+                        <li class="perfect">6. Von dutch</li>
+                        <li class="amazing">7. Everything is romantic</li>
+                        <li class="perfect">8. Rewind</li>
+                        <li class="perfect">9. So I</li>
+                        <li class="amazing">10. Girl, so confusing</li>
+                        <li class="perfect">11. Apple</li>
+                        <li class="amazing">12. B2b</li>
+                        <li class="good">13. Mean girls</li>
+                        <li class="best">14. I think about it all the time</li>
+                        <li class="perfect">15. 365</li>
+                    </ol>
+                    <ol class="ranks">
+                        <li class="r-title">Ranking:</li>
+                        <ul class="rank-items">
+                            <li class="best">Best</li>
+                            <li class="perfect">Perfect</li>
+                            <li class="amazing">Amazing</li>
+                            <li class="good">Good</li>
+                            <li class="okay">Okay</li>
+                            <li class="bad">Bad</li>
+                            <li class="interlude">Interlude</li>
+                        </ul>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- album 4 -->
+
+    <div class="album-wrapper">
+        <button class="overlay-button" id="show-album">
+            <span class="number-hidden">4</span>
+        </button>
+        <div class="album" id="album">
+            <span class="number">4</span>
+            <div class="album-header">
+                <img src="images/chromakopia.jpg" alt="CHROMAKOPIA" class="album-art">
+                <div class="album-details">
+                    <h1 class="name">CHROMAKOPIA</h1>
+                    <h2 class="artist">Tyler, The Creator</h2>
+                    <p class="review">
+                        Tyler, The Creator continues to be one of my favorite artists of all time. This is one of
+                        Tyler’s most eccentric projects yet, and you can tell that he is playing around with lots of
+                        different sounds and topics. From the solid bars on rap songs like ‘Sticky’ and ‘You Thought I
+                        Was Dead’ to the more groovy songs like ‘Darling, I’ and ‘Judge Judy’ he walks away with W after
+                        W on this album. On top of this, he tackles topics like abortion, his father leaving, paranoia
+                        from being famous and feeling behind on relationships and family because of his career. Tyler
+                        continues to build a more and more diverse discography and I love it.
+                    </p>
+                </div>
+                <div class="links">
+                    <a href="https://music.apple.com/us/album/chromakopia/1776500452" target="_blank" class="links-pic">
+                        <img src="images/Apple_Music_Icon_RGB_lg_073120.svg" alt="Apple Music" class="AppleMusic">
+                    </a>
+                    <a href="https://open.spotify.com/album/0U28P0QVB1QRxpqp5IHOlH?si=yWmmyDHFRNKEe1PhyxHjrA"
+                        target="_blank" class="links-pic">
+                        <img src="images/Spotify.png" alt="Spotify" class="Spotify">
+                    </a>
+                </div>
+            </div>
+            <div class="tracklist-section">
+                <button class="tracklist-dropdown" id="toggle-tracklist">Show Tracklist</button>
+                <div class="tracklist-wrapper hidden" id="tracklist">
+                    <ol class="tracklist">
+                        <li class="amazing">1. St. Chroma (feat. Daniel Caesar)</li>
+                        <li class="amazing">2. Rah Tah Tah</li>
+                        <li class="amazing">3. Noid</li>
+                        <li class="perfect"> 4. Darling, I (feat. Teezo Touchdown)</li>
+                        <li class="perfect">5. Hey Jane</li>
+                        <li class="amazing">6. I Killed You</li>
+                        <li class="perfect">7. Judge Judy</li>
+                        <li class="perfect">8. Sticky (feat. GloRilla, Sexyy Red & Lil Wayne)</li>
+                        <li class="amazing">9. Take Your Mask Off (feat. Daniel Caesar & LaToiya Williams)</li>
+                        <li class="best"> 10. Tomorrow</li>
+                        <li class="amazing">11. Thought I Was Dead (feat. ScHoolboy Q & Santigold)</li>
+                        <li class="perfect">12. Like Him (feat. Lola Young)</li>
+                        <li class="perfect">13. Balloon (feat. Doechii)</li>
+                        <li class="amazing">14. I Hope You Find Your Way Home</li>
+                    </ol>
+                    <ol class="ranks">
+                        <li class="r-title">Ranking:</li>
+                        <ul class="rank-items">
+                            <li class="best">Best</li>
+                            <li class="perfect">Perfect</li>
+                            <li class="amazing">Amazing</li>
+                            <li class="good">Good</li>
+                            <li class="okay">Okay</li>
+                            <li class="bad">Bad</li>
+                            <li class="interlude">Interlude</li>
+                        </ul>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- album 3 -->
+
+    <div class="album-wrapper">
+        <button class="overlay-button" id="show-album">
+            <span class="number-hidden">3</span>
+        </button>
+        <div class="album" id="album">
+            <span class="number">3</span>
+            <div class="album-header">
+                <img src="images/imaginaldisk.png" alt="Imaginal Disk" class="album-art">
+                <div class="album-details">
+                    <h1 class="name">Imaginal Disk</h1>
+                    <h2 class="artist">Magdelena Bay</h2>
+                    <p class="review">
+                        I am so excited that I found Magdelena Bay this year. I love the pop-ish sound of <em>Imaginal
+                            Disk</em> and I have also loved going back into their discography and finding even more
+                        amazing music. Specifically, <em>Mini Mix Vol. 3</em> is so short and sweet and catchy. Matt and
+                        Mica have such a fun aesthetic, looking at their music videos along with listening to this album
+                        is a must in my eyes. They captured the early internet vibe so perfectly, and it is so
+                        refreshing to see this in the pop space, which has felt fairly monotonous in recent years. This
+                        album takes you on a trip through the stars and it is a fun trip all the way down.
+                    </p>
+                </div>
+                <div class="links">
+                    <a href="https://music.apple.com/us/album/imaginal-disk/1751414757" target="_blank"
+                        class="links-pic">
+                        <img src="images/Apple_Music_Icon_RGB_lg_073120.svg" alt="Apple Music" class="AppleMusic">
+                    </a>
+                    <a href="https://open.spotify.com/album/4HTy9WFTYooRjE9giTmzAF?si=oWQMwIhvT8aK2bTHzVVoyA"
+                        target="_blank" class="links-pic">
+                        <img src="images/Spotify.png" alt="Spotify" class="Spotify">
+                    </a>
+                </div>
+            </div>
+            <div class="tracklist-section">
+                <button class="tracklist-dropdown" id="toggle-tracklist">Show Tracklist</button>
+                <div class="tracklist-wrapper hidden" id="tracklist">
+                    <ol class="tracklist">
+                        <li class="amazing">1. She Looked Like Me!</li>
+                        <li class="perfect">2. Killing Time</li>
+                        <li class="interlude"> 3. True Blue Interlude</li>
+                        <li class="perfect"> 4. Image</li>
+                        <li class="perfect">5. Death & Romance</li>
+                        <li class="perfect">6. Fear, Sex</li>
+                        <li class="perfect"> 7. Vampire in the Corner</li>
+                        <li class="perfect">8. Watching T.V.</li>
+                        <li class="perfect">9. Tunnel Vision</li>
+                        <li class="perfect"> 10. Love Is Everywhere</li>
+                        <li class="interlude">11. Feeling DisknIserted?</li>
+                        <li class="best">12. That's My Floor</li>
+                        <li class="perfect">13. Cry For Me</li>
+                        <li class="amazing">14. Angel on a Satellite</li>
+                        <li class="amazing">15. The Ballad of Matt & Mica</li>
+                    </ol>
+                    <ol class="ranks">
+                        <li class="r-title">Ranking:</li>
+                        <ul class="rank-items">
+                            <li class="best">Best</li>
+                            <li class="perfect">Perfect</li>
+                            <li class="amazing">Amazing</li>
+                            <li class="good">Good</li>
+                            <li class="okay">Okay</li>
+                            <li class="bad">Bad</li>
+                            <li class="interlude">Interlude</li>
+                        </ul>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- album 2 -->
+
+    <div class="album-wrapper">
+        <button class="overlay-button" id="show-album">
+            <span class="number-hidden">2</span>
+        </button>
+        <div class="album" id="album">
+            <span class="number">2</span>
+            <div class="album-header">
+                <img src="images/GNX.webp" alt="GNX" class="album-art">
+                <div class="album-details">
+                    <h1 class="name">GNX</h1>
+                    <h2 class="artist">Kendrick Lamar</h2>
+                    <p class="review">
+                        As a Kendrick Lamar fan and a Drake hater, this year has been a phenomenal year. And
+                        <em>GNX</em> is the perfect capstone on an already great year. While it is likely his least
+                        conceptual album to date, Kendrick Lamar delivers on all fronts. Kendrick knows that he could
+                        have delivered a whole album of ‘Not Like Us’ and it would have gone mega platinum, but he
+                        decided that he would go a different direction in many places (while still delivering ‘Not Like
+                        Us’ level bangers). Drake simply could never. ‘luther’ has Kendrick singing with SZA,
+                        ‘reincarnated’ brings me back to the days of ‘Sing About Me’ on <em>good kid, m.A.A.d. city</em>
+                        and ‘gloria’ is such a fun song when you listen through a second time, realizing that his
+                        “bitch” is literally his pen. Kendrick Lamar fans are truly feasting this year, and I will
+                        certainly be going in for seconds.
+                    </p>
+                </div>
+                <div class="links">
+                    <a href="https://music.apple.com/us/album/gnx/1781270319" target="_blank" class="links-pic">
+                        <img src="images/Apple_Music_Icon_RGB_lg_073120.svg" alt="Apple Music" class="AppleMusic">
+                    </a>
+                    <a href="https://open.spotify.com/album/0hvT3yIEysuuvkK73vgdcW?si=uUwi-HaqR46uMfMneVOWXg"
+                        target="_blank" class="links-pic">
+                        <img src="images/Spotify.png" alt="Spotify" class="Spotify">
+                    </a>
+                </div>
+            </div>
+            <div class="tracklist-section">
+                <button class="tracklist-dropdown" id="toggle-tracklist">Show Tracklist</button>
+                <div class="tracklist-wrapper hidden" id="tracklist">
+                    <ol class="tracklist">
+                        <li class="perfect">1. wacced out murals</li>
+                        <li class="perfect">2. squabble up</li>
+                        <li class="perfect">3. luther (with sza)</li>
+                        <li class="amazing">4. man at the garden</li>
+                        <li class="perfect">5. hey now (feat. dody6)</li>
+                        <li class="best">6. reincarnated</li>
+                        <li class="perfect">7. tv off (feat. lefty gunplay)</li>
+                        <li class="perfect">8. dodger blue (feat. wallie the sensei, siete7x, roddy ricch)</li>
+                        <li class="perfect">9. peekaboo (feat. azchike)</li>
+                        <li class="perfect">10. heart pt. 6</li>
+                        <li class="amazing">11. gnx (feat. hitta j3, youngthreat, peysoh)</li>
+                        <li class="perfect">12. gloria (with sza)</li>
+                    </ol>
+                    <ol class="ranks">
+                        <li class="r-title">Ranking:</li>
+                        <ul class="rank-items">
+                            <li class="best">Best</li>
+                            <li class="perfect">Perfect</li>
+                            <li class="amazing">Amazing</li>
+                            <li class="good">Good</li>
+                            <li class="okay">Okay</li>
+                            <li class="bad">Bad</li>
+                            <li class="interlude">Interlude</li>
+                        </ul>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- album 1 -->
+
+    <div class="album-wrapper">
+        <button class="overlay-button" id="show-album">
+            <span class="number-hidden">1</span>
+        </button>
+        <div class="album" id="album">
+            <span class="number">1</span>
+            <div class="album-header">
+                <img src="images/ILDMLFY.jpg" alt="I LAY DOWN MY LIFE FOR YOU" class="album-art">
+                <div class="album-details">
+                    <h1 class="name">I LAY DOWN MY LIFE FOR YOU</h1>
+                    <h2 class="artist">JPEGMAFIA</h2>
+                    <p class="review">
+                        While I have not been as big of a fan of some of JPEGMAFIA’s older stuff, he was absolutely
+                        cooking on <em>I LAY DOWN MY LIFE FOR YOU</em>. While Peggy is not for everyone, I think he is
+                        one of the most creative producers out there. He has so many deep cuts for samples - sampling
+                        the show <em>Succession</em> on ‘don’t rely on other men’ and sampling an AI jazz cover of
+                        Future’s ‘Turn On The Lights’ on ‘either on or off the drugs’. And it works so well! JPEGMAFIA
+                        spans many topics, but all of it feels very personal, talking about past relationships on ‘i
+                        recovered from this’ and disavowing the military industrial complex on ‘Exmilitary’, even though
+                        he served in the Air Force when he was younger. Overall, I have been playing this album back to
+                        back to back all year so, I think it deserves the number one spot on my list.
+
+                    </p>
+                </div>
+                <div class="links">
+                    <a href="https://music.apple.com/us/album/i-lay-down-my-life-for-you/1760036431" target="_blank"
+                        class="links-pic">
+                        <img src="images/Apple_Music_Icon_RGB_lg_073120.svg" alt="Apple Music" class="AppleMusic">
+                    </a>
+                    <a href="https://open.spotify.com/album/1ezs1QD5SYQ6LtxpC9y5I2?si=y_0IICXYRBGutzZDVmrQfQ"
+                        target="_blank" class="links-pic">
+                        <img src="images/Spotify.png" alt="Spotify" class="Spotify">
+                    </a>
+                </div>
+            </div>
+            <div class="tracklist-section">
+                <button class="tracklist-dropdown" id="toggle-tracklist">Show Tracklist</button>
+                <div class="tracklist-wrapper hidden" id="tracklist">
+                    <ol class="tracklist">
+                        <li class="perfect">1. i scream this in the mirror before i interact with anyone</li>
+                        <li class="perfect">2. SIN MIEDO</li>
+                        <li class="perfect">3. I'll Be Right There</li>
+                        <li class="amazing">4. it's dark and hell is hot</li>
+                        <li class="amazing">5. New Black History (feat. Vince Staples)</li>
+                        <li class="perfect">6. don't rely on other men</li>
+                        <li class="perfect">7. vulgar display of power</li>
+                        <li class="perfect">8. Exmilitary</li>
+                        <li class="perfect">9. JIHAD JOE</li>
+                        <li class="perfect">10. JPEGULTRA! (feat. Denzel Curry)</li>
+                        <li class="best">11. either on or off the drugs</li>
+                        <li class="perfect">12. loop it and leave it</li>
+                        <li class="perfect">13. Don't Put Anything On the Bible (feat. Buzzy Lee)</li>
+                        <li class="perfect">14. i recovered from this</li>
+                    </ol>
+                    <ol class="ranks">
+                        <li class="r-title">Ranking:</li>
+                        <ul class="rank-items">
+                            <li class="best">Best</li>
+                            <li class="perfect">Perfect</li>
+                            <li class="amazing">Amazing</li>
+                            <li class="good">Good</li>
+                            <li class="okay">Okay</li>
+                            <li class="bad">Bad</li>
+                            <li class="interlude">Interlude</li>
+                        </ul>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p class="intro-para">If you are curious, the full list of the albums I listened to this year is <a
+                class="intro-para-link"
+                href="https://docs.google.com/spreadsheets/d/1_pds3FHudkz2cozAeFsSVw4ZXVd3yrLNq9P918w703I/edit?usp=sharing">here</a>.
+            They are not in any specific order - it's from a google sheet I share with my friends where we suggest
+            albums
+            to listen to and rank (I
+            removed their rankings and the albums I did not get to).</p>
+    </footer>
+
+    <!-- this button is required for some reason ¯\_(ツ)_/¯-->
+    <button id="button"></button>
+    <script src="script.js"></script> <!-- Optional: Link to your JavaScript file -->
+</body>
+
+</html>
