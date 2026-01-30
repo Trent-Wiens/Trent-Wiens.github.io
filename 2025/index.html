@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Trent's Top Ten Albums of 2025">
+    <title>Trent's Top Ten 2025</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+</head>
+
+<body>
+    <div class="page-container">
+        <header>
+            <h1 class="title">Trent's Top Ten 2025</h1>
+            <p class="intro">My favorite albums of the year, ranked.</p>
+        </header>
+
+        <!-- Honorable Mentions -->
+        <section class="honorable-mentions">
+            <h2 class="hm-title">Honorable Mentions</h2>
+            <div class="hm-grid">
+                <div class="hm-card">
+                    <img class="hm-art" src="images/Hyperyouth.jpg" alt="HYPERYOUTH album art">
+                    <div class="streaming-links">
+                        <a href="https://open.spotify.com/album/4QzLpl3oZx1P1BnhvkkAYW?si=62907371321347de" target="_blank" rel="noopener"><img src="images/Spotify.png" alt="Spotify" class="streaming-icon"></a>
+                        <a href="https://music.apple.com/us/album/hyperyouth/1824543248" target="_blank" rel="noopener"><img src="images/Apple_Music_Icon_RGB_lg_073120.svg" alt="Apple Music" class="streaming-icon"></a>
+                    </div>
+                    <h3 class="hm-name">HYPERYOUTH</h3>
+                    <p class="hm-artist">Joey Valence & Brae</p>
+                </div>
+                <div class="hm-card">
+                    <img class="hm-art" src="images/MyFaceHurtsFromSmiling.jpg" alt="MY FACE HURTS FROM SMILING album art">
+                    <div class="streaming-links">
+                        <a href="https://open.spotify.com/album/4DzGpfwSY0GIGECJpR6lkk?si=efee80954c564d6a" target="_blank" rel="noopener"><img src="images/Spotify.png" alt="Spotify" class="streaming-icon"></a>
+                        <a href="https://music.apple.com/us/album/my-face-hurts-from-smiling/1822827244" target="_blank" rel="noopener"><img src="images/Apple_Music_Icon_RGB_lg_073120.svg" alt="Apple Music" class="streaming-icon"></a>
+                    </div>
+                    <h3 class="hm-name">MY FACE HURTS FROM SMILING</h3>
+                    <p class="hm-artist">Lizzo</p>
+                </div>
+                <div class="hm-card">
+                    <img class="hm-art" src="images/WestEndGirl.jpg" alt="West End Girl album art">
+                    <div class="streaming-links">
+                        <a href="https://open.spotify.com/album/4Dn3Z14YfT2gQVDgLmWUVn?si=393ea934ff954db8" target="_blank" rel="noopener"><img src="images/Spotify.png" alt="Spotify" class="streaming-icon"></a>
+                        <a href="https://music.apple.com/us/album/west-end-girl/1846342052" target="_blank" rel="noopener"><img src="images/Apple_Music_Icon_RGB_lg_073120.svg" alt="Apple Music" class="streaming-icon"></a>
+                    </div>
+                    <h3 class="hm-name">West End Girl</h3>
+                    <p class="hm-artist">Lily Allen</p>
+                </div>
+                <div class="hm-card">
+                    <img class="hm-art" src="images/AmerikasNextTopParty.jpg" alt="AMERIKA'S NEXT TOP PARTY! album art">
+                    <div class="streaming-links">
+                        <a href="https://open.spotify.com/album/08YX6S7IDTCyXjFd5PthPn?si=882f6d811c644256" target="_blank" rel="noopener"><img src="images/Spotify.png" alt="Spotify" class="streaming-icon"></a>
+                        <a href="https://music.apple.com/us/album/amerikas-next-top-party/1837263689" target="_blank" rel="noopener"><img src="images/Apple_Music_Icon_RGB_lg_073120.svg" alt="Apple Music" class="streaming-icon"></a>
+                    </div>
+                    <h3 class="hm-name">AMERIKA'S NEXT TOP PARTY!</h3>
+                    <p class="hm-artist">PARTYOF2, Jadagrace, SWIM</p>
+                </div>
+                <div class="hm-card">
+                    <img class="hm-art" src="images/FromFloridasFinest.jpg" alt="FROM FLORIDA'S FINEST album art">
+                    <div class="streaming-links">
+                        <a href="https://open.spotify.com/album/4KUlLprpCrNpRDsXC4MOAV?si=da3139dc82154bf1" target="_blank" rel="noopener"><img src="images/Spotify.png" alt="Spotify" class="streaming-icon"></a>
+                        <a href="https://music.apple.com/us/album/from-floridas-finest/1809267067" target="_blank" rel="noopener"><img src="images/Apple_Music_Icon_RGB_lg_073120.svg" alt="Apple Music" class="streaming-icon"></a>
+                    </div>
+                    <h3 class="hm-name">FROM FLORIDA'S FINEST</h3>
+                    <p class="hm-artist">SAILORR</p>
+                </div>
+            </div>
+        </section>
+
+        <hr class="divider">
+
+        <!-- Album 10 -->
+        <article class="album-card" data-rank="10">
+            <span class="rank">10</span>
+            <div class="album-content">
+                <img class="album-art" src="images/Mayhem.jpg" alt="MAYHEM album art">
+                <div class="album-info">
+                    <h2 class="album-name">MAYHEM</h2>
+                    <h3 class="album-artist">Lady Gaga</h3>
+                    <div class="streaming-links">
+                        <a href="https://open.spotify.com/album/2MHUaRi9OCyTN02SoyRRBJ?si=oSK47r-0QyS6htHBZaDndw" target="_blank" rel="noopener"><img src="images/Spotify.png" alt="Spotify" class="streaming-icon"></a>
+                        <a href="https://music.apple.com/us/album/mayhem/1837310866" target="_blank" rel="noopener"><img src="images/Apple_Music_Icon_RGB_lg_073120.svg" alt="Apple Music" class="streaming-icon"></a>
+                    </div>
+                </div>
+                <div class="chart-container">
+                    <canvas id="chart-10"></canvas>
+                </div>
+            </div>
+        </article>
+
+        <!-- Album 9 -->
+        <article class="album-card" data-rank="9">
+            <span class="rank">9</span>
+            <div class="album-content">
+                <img class="album-art" src="images/Lotus.jpg" alt="Lotus album art">
+                <div class="album-info">
+                    <h2 class="album-name">Lotus</h2>
+                    <h3 class="album-artist">Little Simz</h3>
+                    <div class="streaming-links">
+                        <a href="https://open.spotify.com/album/0ofdTvYtx4LpsVjemJt71X?si=51nsMvZ-SVi6LGvWI14m8Q" target="_blank" rel="noopener"><img src="images/Spotify.png" alt="Spotify" class="streaming-icon"></a>
+                        <a href="https://music.apple.com/us/album/lotus/1794880972" target="_blank" rel="noopener"><img src="images/Apple_Music_Icon_RGB_lg_073120.svg" alt="Apple Music" class="streaming-icon"></a>
+                    </div>
+                </div>
+                <div class="chart-container">
+                    <canvas id="chart-9"></canvas>
+                </div>
+            </div>
+        </article>
+
+        <!-- Album 8 -->
+        <article class="album-card" data-rank="8">
+            <span class="rank">8</span>
+            <div class="album-content">
+                <img class="album-art" src="images/AMatterOfTime.jpg" alt="A Matter of Time album art">
+                <div class="album-info">
+                    <h2 class="album-name">A Matter of Time</h2>
+                    <h3 class="album-artist">Laufey</h3>
+                    <div class="streaming-links">
+                        <a href="https://open.spotify.com/album/5rMOCuiWWbEBcHaKM69Hmv?si=_Gs9fBYsRd2LalcSCsrjlw" target="_blank" rel="noopener"><img src="images/Spotify.png" alt="Spotify" class="streaming-icon"></a>
+                        <a href="https://music.apple.com/us/album/a-matter-of-time/1810514672" target="_blank" rel="noopener"><img src="images/Apple_Music_Icon_RGB_lg_073120.svg" alt="Apple Music" class="streaming-icon"></a>
+                    </div>
+                </div>
+                <div class="chart-container">
+                    <canvas id="chart-8"></canvas>
+                </div>
+            </div>
+        </article>
+
+        <!-- Album 7 -->
+        <article class="album-card" data-rank="7">
+            <span class="rank">7</span>
+            <div class="album-content">
+                <img class="album-art" src="images/Vie.jpg" alt="Vie album art">
+                <div class="album-info">
+                    <h2 class="album-name">Vie</h2>
+                    <h3 class="album-artist">Doja Cat</h3>
+                    <div class="streaming-links">
+                        <a href="https://open.spotify.com/album/1cqqIH16XzBnDchrXJ9Enf?si=UmtBsjygSZSTzb5tkcLAUg" target="_blank" rel="noopener"><img src="images/Spotify.png" alt="Spotify" class="streaming-icon"></a>
+                        <a href="https://music.apple.com/us/album/vie/1834042903" target="_blank" rel="noopener"><img src="images/Apple_Music_Icon_RGB_lg_073120.svg" alt="Apple Music" class="streaming-icon"></a>
+                    </div>
+                </div>
+                <div class="chart-container">
+                    <canvas id="chart-7"></canvas>
+                </div>
+            </div>
+        </article>
+
+        <!-- Album 6 -->
+        <article class="album-card" data-rank="6">
+            <span class="rank">6</span>
+            <div class="album-content">
+                <img class="album-art" src="images/WhereIsMyHead.jpg" alt="WHERE IS MY HEAD? album art">
+                <div class="album-info">
+                    <h2 class="album-name">WHERE IS MY HEAD?</h2>
+                    <h3 class="album-artist">Rich Brian</h3>
+                    <div class="streaming-links">
+                        <a href="https://open.spotify.com/album/4KdSMovHLQrLV7lGM7Z0af?si=sku4XEZMTJuFDpW3SQsE8w" target="_blank" rel="noopener"><img src="images/Spotify.png" alt="Spotify" class="streaming-icon"></a>
+                        <a href="https://music.apple.com/us/album/where-is-my-head/1811623351" target="_blank" rel="noopener"><img src="images/Apple_Music_Icon_RGB_lg_073120.svg" alt="Apple Music" class="streaming-icon"></a>
+                    </div>
+                </div>
+                <div class="chart-container">
+                    <canvas id="chart-6"></canvas>
+                </div>
+            </div>
+        </article>
+
+        <!-- Album 5 -->
+        <article class="album-card" data-rank="5">
+            <span class="rank">5</span>
+            <div class="album-content">
+                <img class="album-art" src="images/GodDoesLikeUgly.jpg" alt="God Does Like Ugly album art">
+                <div class="album-info">
+                    <h2 class="album-name">God Does Like Ugly</h2>
+                    <h3 class="album-artist">JID</h3>
+                    <div class="streaming-links">
+                        <a href="https://open.spotify.com/album/2tU04u3hxtziB4sOVJKak3?si=d_HmqpaQQAK9pLDMOHdNJg" target="_blank" rel="noopener"><img src="images/Spotify.png" alt="Spotify" class="streaming-icon"></a>
+                        <a href="https://music.apple.com/us/album/god-does-like-ugly/1812517697" target="_blank" rel="noopener"><img src="images/Apple_Music_Icon_RGB_lg_073120.svg" alt="Apple Music" class="streaming-icon"></a>
+                    </div>
+                </div>
+                <div class="chart-container">
+                    <canvas id="chart-5"></canvas>
+                </div>
+            </div>
+        </article>
+
+        <!-- Album 4 -->
+        <article class="album-card" data-rank="4">
+            <span class="rank">4</span>
+            <div class="album-content">
+                <img class="album-art" src="images/PrincessOfPower.jpg" alt="PRINCESS OF POWER album art">
+                <div class="album-info">
+                    <h2 class="album-name">PRINCESS OF POWER</h2>
+                    <h3 class="album-artist">MARINA</h3>
+                    <div class="streaming-links">
+                        <a href="https://open.spotify.com/album/2rjfRdmVDBMFT5mamSsVeU?si=8K1Mwp1FRs-ClAJMW7im1Q" target="_blank" rel="noopener"><img src="images/Spotify.png" alt="Spotify" class="streaming-icon"></a>
+                        <a href="https://music.apple.com/us/album/princess-of-power/1807308262" target="_blank" rel="noopener"><img src="images/Apple_Music_Icon_RGB_lg_073120.svg" alt="Apple Music" class="streaming-icon"></a>
+                    </div>
+                </div>
+                <div class="chart-container">
+                    <canvas id="chart-4"></canvas>
+                </div>
+            </div>
+        </article>
+
+        <!-- Album 3 -->
+        <article class="album-card" data-rank="3">
+            <span class="rank">3</span>
+            <div class="album-content">
+                <img class="album-art" src="images/Lux.jpg" alt="LUX album art">
+                <div class="album-info">
+                    <h2 class="album-name">LUX</h2>
+                    <h3 class="album-artist">ROSAL&Iacute;A</h3>
+                    <div class="streaming-links">
+                        <a href="https://open.spotify.com/album/3SUEJULSGgBDG1j4GQhfYY?si=GbUardxARJK-UJDnlOR1WA" target="_blank" rel="noopener"><img src="images/Spotify.png" alt="Spotify" class="streaming-icon"></a>
+                        <a href="https://music.apple.com/us/album/lux/1848167516" target="_blank" rel="noopener"><img src="images/Apple_Music_Icon_RGB_lg_073120.svg" alt="Apple Music" class="streaming-icon"></a>
+                    </div>
+                </div>
+                <div class="chart-container">
+                    <canvas id="chart-3"></canvas>
+                </div>
+            </div>
+        </article>
+
+        <!-- Album 2 -->
+        <article class="album-card" data-rank="2">
+            <span class="rank">2</span>
+            <div class="album-content">
+                <img class="album-art" src="images/ILoveMyComputer.jpg" alt="I Love My Computer album art">
+                <div class="album-info">
+                    <h2 class="album-name">I Love My Computer</h2>
+                    <h3 class="album-artist">Ninajirachi</h3>
+                    <div class="streaming-links">
+                        <a href="https://open.spotify.com/album/77CZUF57sYqgtznUe3OikQ?si=2Qo4upjQSMCMcDU6_Yx4Vw" target="_blank" rel="noopener"><img src="images/Spotify.png" alt="Spotify" class="streaming-icon"></a>
+                        <a href="https://music.apple.com/us/album/i-love-my-computer/1824602984" target="_blank" rel="noopener"><img src="images/Apple_Music_Icon_RGB_lg_073120.svg" alt="Apple Music" class="streaming-icon"></a>
+                    </div>
+                </div>
+                <div class="chart-container">
+                    <canvas id="chart-2"></canvas>
+                </div>
+            </div>
+        </article>
+
+        <!-- Album 1 -->
+        <article class="album-card" data-rank="1">
+            <span class="rank">1</span>
+            <div class="album-content">
+                <img class="album-art" src="images/LetGodSortEmOut.jpg" alt="Let God Sort Em Out album art">
+                <div class="album-info">
+                    <h2 class="album-name">Let God Sort Em Out</h2>
+                    <h3 class="album-artist">Clipse</h3>
+                    <div class="streaming-links">
+                        <a href="https://open.spotify.com/album/17ScNnJ0lSWajodZaRpHdQ?si=-r5pkaNdRp-yJKLiSL5cNQ" target="_blank" rel="noopener"><img src="images/Spotify.png" alt="Spotify" class="streaming-icon"></a>
+                        <a href="https://music.apple.com/us/album/let-god-sort-em-out/1816313639" target="_blank" rel="noopener"><img src="images/Apple_Music_Icon_RGB_lg_073120.svg" alt="Apple Music" class="streaming-icon"></a>
+                    </div>
+                </div>
+                <div class="chart-container">
+                    <canvas id="chart-1"></canvas>
+                </div>
+            </div>
+        </article>
+
+        <footer>
+            <p>&copy; 2025 Trent's Top Ten</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
