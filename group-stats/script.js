@@ -114,7 +114,8 @@ function makeQuadrantPlugin(medX, medY) {
 
 // ─── Main ────────────────────────────────────────────────────────────────────
 fetch('data.csv')
-    .then(r => r.text())
+    .then(r => r.arrayBuffer())
+    .then(buf => new TextDecoder('utf-8').decode(buf))
     .then(text => {
         const rows = parseCSV(text);
         if (!rows.length) return;
