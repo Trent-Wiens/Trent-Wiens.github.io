@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="/group-stats/">
+    <title>Mid-Year Group Stats 2025</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.2.0/dist/chartjs-plugin-datalabels.min.js"></script>
+</head>
+
+<body>
+    <div class="page-container">
+        <header>
+            <p class="eyebrow">Group Stats</p>
+            <h1 class="title">Mid-Year 2025</h1>
+            <p class="intro">How we've been rating albums so far — halfway through the year.</p>
+        </header>
+
+        <!-- Scatter: Avg vs Std Dev -->
+        <section class="card" id="section-scatter">
+            <h2 class="section-title">Consensus Map</h2>
+            <p class="section-desc">Average score vs. standard deviation. Top-right = loved by all. Top-left = hidden gem or divisive.</p>
+            <div class="chart-wrap chart-wrap--scatter">
+                <canvas id="chart-scatter"></canvas>
+            </div>
+        </section>
+
+        <!-- Combined histogram -->
+        <section class="card" id="section-combined">
+            <h2 class="section-title">Overall Rating Distribution</h2>
+            <p class="section-desc">How all ratings across the group break down by score.</p>
+            <div class="chart-wrap chart-wrap--bar">
+                <canvas id="chart-combined"></canvas>
+            </div>
+        </section>
+
+        <!-- Per-person histograms -->
+        <section class="card" id="section-individual">
+            <h2 class="section-title">Individual Distributions</h2>
+            <p class="section-desc">Each person's rating breakdown.</p>
+            <div id="individual-charts" class="individual-grid"></div>
+        </section>
+
+        <!-- Grouped multi-person bar -->
+        <section class="card" id="section-grouped">
+            <h2 class="section-title">Ratings Side by Side</h2>
+            <p class="section-desc">Each person's count per score, grouped together.</p>
+            <div class="chart-wrap chart-wrap--bar">
+                <canvas id="chart-grouped"></canvas>
+            </div>
+        </section>
+
+        <!-- Top albums table -->
+        <section class="card" id="section-table">
+            <h2 class="section-title">All Albums</h2>
+            <p class="section-desc">Sorted by average score. Click a header to re-sort.</p>
+            <div class="table-wrap">
+                <table id="album-table">
+                    <thead>
+                        <tr>
+                            <th data-col="album">Album</th>
+                            <th data-col="artist">Artist</th>
+                            <th data-col="avg" class="sorted-desc">Avg ▾</th>
+                            <th data-col="std">Std Dev</th>
+                            <th data-col="n">Ratings</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </section>
+
+        <footer>
+            <p>Mid-Year 2025 · Updated as the year goes on</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
